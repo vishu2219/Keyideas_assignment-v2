@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.TodoItemPage"
+             Title="{Binding name}">
+    <StackLayout Margin="20"
+                 VerticalOptions="StartAndExpand">
+        <Image x:Name="imageView"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start" />
+        <Label Text="Name" />
+        <Entry Text="{Binding name}" />
+        <Label Text="Email" />
+        <Entry Text="{Binding email}" />
+        <Label Text="Phone No." />
+        <Entry Text="{Binding phone}" />
+        <Label Text="Website" />
+        <Entry Text="{Binding website}" />
+        <Label Text="Address" />
+        <Entry Text="{Binding address.city}"/>
+
+        <Button Clicked="OnClickedRectangle" Text="Upload Image" />
+        
+        
+        <Button Text="Save"
+                Clicked="OnSaveClicked" />
+        <Button Text="Delete"
+                Clicked="OnDeleteClicked" />
+        <Button Text="Cancel"
+                Clicked="OnCancelClicked" />
+    </StackLayout>
+</ContentPage>

@@ -50,7 +50,7 @@
        
         <ListView x:Name="jason"
                
-              ItemSelected="OnListItemSelected" HasUnevenRows="True" Grid.Row="3">
+              ItemSelected="OnListItemSelected2" HasUnevenRows="True" Grid.Row="3">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

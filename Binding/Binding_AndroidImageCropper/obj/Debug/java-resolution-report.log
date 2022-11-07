@@ -1,0 +1,7 @@
+==== Cycle 1 ====
+
+The method '[Method] void startPickImageActivity(android.content.Context context, androidx.fragment.app.Fragment fragment)' was removed because the Java parameter type 'androidx.fragment.app.Fragment' could not be found.
+The method '[Method] void start(android.content.Context context, androidx.fragment.app.Fragment fragment)' was removed because the Java parameter type 'androidx.fragment.app.Fragment' could not be found.
+The method '[Method] void start(android.content.Context context, androidx.fragment.app.Fragment fragment, java.lang.Class<?> cls)' was removed because the Java parameter type 'androidx.fragment.app.Fragment' could not be found.
+The class '[Class] com.theartofdev.edmodo.cropper.CropImageActivity' was removed because the Java base type 'androidx.appcompat.app.AppCompatActivity' could not be found.
+

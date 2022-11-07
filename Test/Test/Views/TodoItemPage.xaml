@@ -3,21 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Todo.Views.TodoItemPage"
              Title="{Binding name}">
+    <ScrollView>
     <StackLayout Margin="20"
                  VerticalOptions="StartAndExpand">
-        <Image x:Name="imageView"
+
+        <Image x:Name="imageView "
                    HorizontalOptions="Center"
-                   VerticalOptions="Start" />
+                   VerticalOptions="Start"
+               Source="{Binding profilepic}"
+              
+               />
         <Label Text="Name" />
         <Entry Text="{Binding name}" />
         <Label Text="Email" />
         <Entry Text="{Binding email}" />
+        <Label Text="Username" />
+        <Entry Text="{Binding username}" />
         <Label Text="Phone No." />
         <Entry Text="{Binding phone}" />
         <Label Text="Website" />
         <Entry Text="{Binding website}" />
-        <Label Text="Address" />
-        <Entry Text="{Binding address.city}"/>
+    
+        <Label Text="Street" />
+        <Entry Text="{Binding street}"/>
+        <Label Text="Suite" />
+        <Entry Text="{Binding suite}"/>
+        <Label Text="City" />
+        <Entry Text="{Binding city}"/>
+        <Label Text="Zipcode" />
+        <Entry Text="{Binding zipcode}"/>
+        <Label Text="Longitude" />
+        <Entry Text="{Binding lng}"/>
+        <Label Text="Latitude" />
+        <Entry Text="{Binding lat}"/>
+        <Label Text="Company Name" />
+        <Entry Text="{Binding CName}"/>
+        <Label Text="Company CatchPhrase" />
+        <Entry Text="{Binding catchPhrase}"/>
+        <Label Text="Company Bs" />
+        <Entry Text="{Binding bs}"/>
 
         <Button Clicked="OnClickedRectangle" Text="Upload Image" />
         
@@ -28,5 +52,7 @@
                 Clicked="OnDeleteClicked" />
         <Button Text="Cancel"
                 Clicked="OnCancelClicked" />
+    
     </StackLayout>
+    </ScrollView>
 </ContentPage>

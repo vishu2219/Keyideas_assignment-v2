@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using SQLite;
 using Todo.Models;
 using Todo;
+using Xamarin.Forms;
 
 namespace Test.Data
 {
@@ -58,6 +59,11 @@ namespace Test.Data
         public Task<int> DeleteItemAsync(TodoItem item)
         {
             return Database.DeleteAsync(item);
+        }
+
+        internal Task SaveItemAsync(ImageSource source)
+        {
+            throw new NotImplementedException();
         }
 
         public static implicit operator TodoItemDatabase(ObservableCollection<TodoItem> v)

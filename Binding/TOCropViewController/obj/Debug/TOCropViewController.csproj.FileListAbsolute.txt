@@ -1,0 +1,8 @@
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\bin\Debug\TOCropViewController.dll
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\bin\Debug\TOCropViewController.pdb
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\obj\Debug\_ProcessedBundleResourcesPath.items
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\obj\Debug\_ProcessedContentPath.items
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\obj\Debug\TOCropViewController.csproj.AssemblyReference.cache
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\obj\Debug\TOCropViewController.csproj.CoreCompileInputs.cache
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\obj\Debug\TOCropViewController.dll
+C:\Users\vishu\Downloads\ImageCropper.Forms-master\Binding\TOCropViewController\obj\Debug\TOCropViewController.pdb

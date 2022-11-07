@@ -9,7 +9,9 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Test;
 using Test.Data;
+using Test.Views;
 using Todo.Models;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -78,31 +80,59 @@ namespace Todo.Views
                 });
             }
         }
+        async void OnListItemSelected2(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new TodoItemPageJ
+                {
+                    BindingContext = e.SelectedItem as TodoItem
+                });
+            }
+        }
 
 
 
 
 
         //Button to fetch and show jason data
-        //private ObservableCollection<TodoItem> _rootobj;
+        private ObservableCollection<TodoItem> _rootobj;
+        
+
         async void Button_Clicked(object sender, EventArgs e)
         {
-            var httpClient = new HttpClient();
-            var response = await httpClient.GetStringAsync("https://jsonplaceholder.typicode.com/users");
-            var product = JsonConvert.DeserializeObject<List<TodoItem>>(response);
+            //var httpClient = new HttpClient();
+            //var response = await httpClient.GetStringAsync("https://jsonplaceholder.typicode.com/users");
+            //var product = JsonConvert.DeserializeObject<List<TodoItem>>(response);
             //product = await dataBase.Table<TodoItem>().ToListAsync();
-            await dataBase.InsertAllAsync(product);
-            //var products = await dataBase.Table<TodoItem>().ToListAsync();
+           // await dataBase.InsertAllAsync(product);
+            BindingContext = this;
+            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
+            Stream stream = assembly.GetManifestResourceStream("Test.Contact.json");
 
-            //foreach(var item in product)
-            //{
-            //  await dataBase.InsertAsync(item);
-            //}
 
-            
-                
-                jason.ItemsSource = product;
+            using (var reader = new System.IO.StreamReader(stream))
+            {
+                var json = reader.ReadToEnd();
+
+                List<TodoItem> mylist = JsonConvert.DeserializeObject<List<TodoItem>>(json);
+                _rootobj = new ObservableCollection<TodoItem>(mylist);
+                jason.ItemsSource = _rootobj;
+
+
+                //var products = await dataBase.Table<TodoItem>().ToListAsync();
+
+                //foreach(var item in product)
+                //{
+                //  await dataBase.InsertAsync(item);
+                //}
+
+
+
+                //jason.ItemsSource = product;
 
             }
         }
     }
+}
+    

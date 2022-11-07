@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.TodoItemPageJ"
+             Title="{Binding name}">
+
+    
+        <ScrollView>
+            <StackLayout Margin="20"
+                 VerticalOptions="StartAndExpand">
+                <Image x:Name="imageView"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start" />
+                <Label Text="Name" />
+                <Entry Text="{Binding name}" />
+                <Label Text="Email" />
+                <Entry Text="{Binding email}" />
+            <Label Text="Username" />
+            <Entry Text="{Binding username}" />
+            <Label Text="Phone No." />
+                <Entry Text="{Binding phone}" />
+                <Label Text="Website" />
+                <Entry Text="{Binding website}" />
+                
+                <Label Text="Street" />
+                <Entry Text="{Binding address.street}"/>
+                <Label Text="Suite" />
+                <Entry Text="{Binding address.suite}"/>
+                <Label Text="City" />
+                <Entry Text="{Binding address.city}"/>
+                <Label Text="Zipcode" />
+            <Entry Text="{Binding address.zipcode}"/>
+            <Label Text="Longitude" />
+                <Entry Text="{Binding address.geo.lng}"/>
+            <Label Text="Latitude" />
+            <Entry Text="{Binding address.geo.lat}"/>
+           <!-- <Label Text="Company Name" />
+                <Entry Text="{Binding company.Name}"/>
+                <Label Text="Company CatchPhrase" />
+                <Entry Text="{Binding company.catchPhrase}"/>
+                <Label Text="Company Bs" />
+                <Entry Text="{Binding company.bs}"/>-->
+
+                <Button Clicked="OnClickedRectangle" Text="Upload Image" />
+
+
+                <Button Text="Save"
+                Clicked="OnSaveClicked" />
+                <Button Text="Delete"
+                Clicked="OnDeleteClicked" />
+                <Button Text="Cancel"
+                Clicked="OnCancelClicked" />
+            </StackLayout>
+        </ScrollView>
+    
+
+
+</ContentPage>

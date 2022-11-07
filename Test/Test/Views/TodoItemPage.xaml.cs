@@ -13,7 +13,7 @@ namespace Todo.Views
         {
             InitializeComponent();
         }
-        
+
 
         async void OnSaveClicked(object sender, EventArgs e)
         {
@@ -45,34 +45,26 @@ namespace Todo.Views
                 //                AspectRatioY = 1,
                 Success = (imageFile) =>
                 {
-                    Device.BeginInvokeOnMainThread(() =>
+                    Device.BeginInvokeOnMainThread(async () =>
                     {
                         imageView.Source = ImageSource.FromFile(imageFile);
-                    });
-                },
-                Faiure = () => {
-                    Console.WriteLine("Error capturando la imagen o haciendo crop.");
-                }
-            }.Show(this);
-        }
+                        
 
-        private void OnClickedCircle(object sender, EventArgs e)
-        {
-            imageView.Source = null;
-            new ImageCropper()
-            {
-                CropShape = ImageCropper.CropShapeType.Oval,
-                Success = (imageFile) =>
-                {
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        imageView.Source = ImageSource.FromFile(imageFile);
+
+
                     });
                 },
-                Faiure = () => {
-                    Console.WriteLine("Error capturando la imagen o haciendo crop.");
+                Faiure = () =>
+                {
+                    Console.WriteLine("Error in cropping image.");
                 }
-            }.Show(this);
+                
+
+        }.Show(this);
+            
+
+
+
         }
     }
 }

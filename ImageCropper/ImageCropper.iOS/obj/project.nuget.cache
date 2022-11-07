@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NFvMKhi/aOEBVZwkAWM0XhXRgbuJGO6RMWcO8E0UeO0551s3Vn0ShQjB8R6faIKZVrSL6q+/HGfY0iNHMPDbbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vishu\\OneDrive\\Desktop\\Keyideas_test\\ImageCropper\\ImageCropper.iOS\\ImageCropper.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vishu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\xamarin.forms\\4.5.0.725\\xamarin.forms.4.5.0.725.nupkg.sha512"
+  ],
+  "logs": []
+}

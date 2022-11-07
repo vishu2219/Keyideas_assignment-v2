@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "54N72oYwZFGVlWEhY7nwlEaByGy3y9IONbIcGG/NqBaev8neyDFHgc3wcigLNwu94fFocXT8IhjZULljT+pytw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vishu\\OneDrive\\Desktop\\Keyideas_test\\Test\\Test.iOS\\Test.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vishu\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.linux\\1.1.14\\sqlitepclraw.lib.e_sqlite3.linux.1.1.14.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\vishu\\.nuget\\packages\\xamarin.forms\\4.5.0.725\\xamarin.forms.4.5.0.725.nupkg.sha512"
+  ],
+  "logs": []
+}
